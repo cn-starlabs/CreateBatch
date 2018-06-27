@@ -201,12 +201,13 @@
             // 
             // btnBrowserV2
             // 
-            this.btnBrowserV2.Location = new System.Drawing.Point(79, 335);
+            this.btnBrowserV2.Location = new System.Drawing.Point(79, 322);
             this.btnBrowserV2.Name = "btnBrowserV2";
-            this.btnBrowserV2.Size = new System.Drawing.Size(138, 21);
+            this.btnBrowserV2.Size = new System.Drawing.Size(138, 34);
             this.btnBrowserV2.TabIndex = 16;
             this.btnBrowserV2.Text = "Browser Value2";
             this.btnBrowserV2.UseVisualStyleBackColor = true;
+            this.btnBrowserV2.Click += new System.EventHandler(this.btnBrowserV2_Click);
             // 
             // btnBrowserV1
             // 

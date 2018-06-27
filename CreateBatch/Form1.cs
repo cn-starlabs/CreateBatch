@@ -47,14 +47,15 @@ namespace CreateBatch
                     if (k % i == 0)
                     {
                         Console.WriteLine(k % i);
-                        LC.WriteBatch(tbStart.Text.Replace("&Value1", tbListContent1.Lines[k-1]), "GenScript" + fileNum + ".bat");
+                        LC.WriteBatch(tbStart.Text.Replace("&Value1", tbListContent1.Lines[k - 1]), "GenScript" + fileNum + ".bat");
+                        //LC.WriteBatch(tbStart.Text.Replace("&Value1", tbListContent1.Lines[k - 1]).Replace("&Value2", tbListContent2.Lines[k - 1]), "GenScript" + fileNum + ".bat");
                         fileNum++;
                     }
                     else
                     {
                         Console.WriteLine(k % i);
                         LC.WriteBatch(tbStart.Text.Replace("&Value1", tbListContent1.Lines[k-1]), "GenScript" + fileNum + ".bat");
-
+                        //LC.WriteBatch(tbStart.Text.Replace("&Value1", tbListContent1.Lines[k - 1]).Replace("&Value2", tbListContent2.Lines[k - 1]), "GenScript" + fileNum + ".bat");
                     }
 
                     //for(int m=lines;m<lines+i;m++)
@@ -125,6 +126,40 @@ namespace CreateBatch
 
             }
 
+        }
+
+        private void btnBrowserV2_Click(object sender, EventArgs e)
+        {
+            //OpenFileDialog fileDialog = new OpenFileDialog();
+            //筛选  
+            //fileDialog.Filter = "Word Documents|*.docx" +  
+            //                            "|Excel Worksheets|*.xlsx" +  
+            //                            "|PowerPoint Presentations|*.pptx" +  
+            //                          "|Office Files|*.docx;*.xlsx;*.pptx" +  
+            //                            "|All Files|*.*";  
+            // if (fileDialog.ShowDialog().Equals(DialogResult.OK))
+            // {
+            //显示选择文件  
+            //MessageBox.Show(fileDialog.FileName);
+            // cbFile.Text = fileDialog.FileName;
+            //cbSourceFolder.Text = System.IO.Path.GetFileName(fileDialog.FileName);
+            //cbFile.Text = System.IO.Path.GetFileName(fileDialog.FileName);
+            //cbSourceFolder.Text = System.IO.Path.GetDirectoryName(fileDialog.FileName);
+            //  } 
+            if (folderBrowserDialog1.ShowDialog().Equals(DialogResult.OK))
+            {
+                //tbListContent1.Text = System.IO.Path.GetDirectoryName(folderBrowserDialog1.SelectedPath.di);
+
+                DirectoryInfo di = new DirectoryInfo(folderBrowserDialog1.SelectedPath);//strBaseDir是起始目录，绝对地址
+                DirectoryInfo[] diA = di.GetDirectories();//获得了所有一级子目录
+                FileInfo[] fiA = di.GetFiles();//获得了所有起始目录下的文件
+                Console.WriteLine(diA[0] + diA.Length.ToString());
+                for (int k = 0; k < diA.Length; k++)
+                {
+                    Console.WriteLine(diA[k] + diA.Length.ToString());
+                    tbListContent2.AppendText(diA[k].ToString() + "\r\n");
+                }
+            }
         }
 
         //列出所有值
