@@ -1,0 +1,9 @@
+C:\Users\owen.yang\Documents\CShare_Example\SystemStatus\CreateBatch\CreateBatch\bin\Debug\CreateBatch.exe.config
+C:\Users\owen.yang\Documents\CShare_Example\SystemStatus\CreateBatch\CreateBatch\bin\Debug\CreateBatch.exe
+C:\Users\owen.yang\Documents\CShare_Example\SystemStatus\CreateBatch\CreateBatch\bin\Debug\CreateBatch.pdb
+C:\Users\owen.yang\Documents\CShare_Example\SystemStatus\CreateBatch\CreateBatch\obj\Debug\CreateBatch.csprojResolveAssemblyReference.cache
+C:\Users\owen.yang\Documents\CShare_Example\SystemStatus\CreateBatch\CreateBatch\obj\Debug\CreateBatch.Form1.resources
+C:\Users\owen.yang\Documents\CShare_Example\SystemStatus\CreateBatch\CreateBatch\obj\Debug\CreateBatch.Properties.Resources.resources
+C:\Users\owen.yang\Documents\CShare_Example\SystemStatus\CreateBatch\CreateBatch\obj\Debug\CreateBatch.csproj.GenerateResource.Cache
+C:\Users\owen.yang\Documents\CShare_Example\SystemStatus\CreateBatch\CreateBatch\obj\Debug\CreateBatch.exe
+C:\Users\owen.yang\Documents\CShare_Example\SystemStatus\CreateBatch\CreateBatch\obj\Debug\CreateBatch.pdb
