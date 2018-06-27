@@ -1,3 +1,3 @@
 ﻿# bulk create batch
 
-## use this tool create mutipule batch script
+## use this tool create mutiple batch script
